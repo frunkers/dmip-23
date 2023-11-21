@@ -7,9 +7,11 @@
       <meta name="theme-color" content="#353fd5" />
       <title>DMIP-23</title>
       <link rel="stylesheet" href="./css/main.css" />
+      <link rel="icon" href="./assets/img/card-2.svg" type="image/svg+xml" />
    </head>
    <body>
       <div class="wrapper">
+         <!-- header -->
          <header class="header">
             <div class="header__container">
                <p class="header__logo">Title 1</p>
@@ -27,6 +29,34 @@
          </header>
 
          <main>
+            <!-- section tabs -->
+            <section class="tabs">
+               <div class="tabs__container">
+                  <a class="tabs__link" href="#!">Home/</a>
+               </div>
+            </section>
+
+            <!-- section offer -->
+            <section class="offer">
+               <div class="offer__container">
+                  <div class="slide">
+                     <div class="slide__content">
+                        <h1 class="slide__title">Main heading</h1>
+                        <p class="slide__text">
+                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                           ligula eget dolor Aenean massa. Cum sociis natoque penatibus et magnis
+                           dis parturient montes, nascetur ridiculus mus. Dones quam telis,
+                           ultricies nec, pelientesque eu, pretium quis, sem. Nulla consequat massa
+                           quis enim.
+                        </p>
+                        <a class="slide__more" href="#!">Read more</a>
+                     </div>
+                     <img src="./assets/img/offer.svg" alt="Offer image" class="slide__image" />
+                  </div>
+               </div>
+            </section>
+
+            <!-- section cards -->
             <section class="cards">
                <div class="card__container">
                   <ul class="card__list">
@@ -78,9 +108,10 @@
             </section>
          </main>
 
+         <!-- footer -->
          <footer class="footer">
             <div class="footer__container">
-               <nav class="nav">
+               <nav class="nav footer__nav">
                   <ul class="nav__list">
                      <li class="nav__item">
                         <a class="nav__link nav__link_active" href="#!">Home</a>
