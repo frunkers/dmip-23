@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+html,
+body {
+   height: 100vh;
+}
+
+ul,
+ol {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+main {
+   flex: 1 1 auto;
+}
+
+img,
+picture,
+video {
+   display: block;
+}
