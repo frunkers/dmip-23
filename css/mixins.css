@@ -1,4 +1,17 @@
-:root {
-   --main-color: #353fd5;
-   --accent-color: #b2854e;
+[class*="__container"] {
+   margin: 0 auto;
+}
+
+.btn-accent {
+   border: 0;
+   background: var(--accent-color);
+   padding: 16px 34px;
+   color: #fff;
+   cursor: pointer;
+   transition: 0.3s background;
+}
+
+.btn-accent:hover,
+.btn-accent:active {
+   background: #987243;
 }

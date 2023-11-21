@@ -1,3 +1,131 @@
 @import "./reset.css";
 @import "./utilities.css";
 @import "./mixins.css";
+
+/* header */
+.header {
+   background: var(--main-color);
+}
+
+.header__container {
+   height: 82px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   padding: 0 185px;
+}
+
+.header__logo {
+   font-size: 46px;
+   color: #fff;
+}
+
+.nav {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.nav__list {
+   display: flex;
+}
+
+.nav__item + .nav__item {
+   margin-left: 45px;
+}
+
+.nav__link {
+   position: relative;
+   color: #f2f2f2;
+   font-size: 17px;
+   text-transform: uppercase;
+}
+
+.nav__link::before {
+   content: "";
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   width: 0%;
+   height: 2px;
+   transition: 0.3s;
+   background: #fff;
+}
+
+.nav__link:hover::before {
+   width: 100%;
+}
+
+.nav__link_active::before {
+   width: 100%;
+}
+
+/* section cards */
+.cards {
+   padding: 40px 0 48px 0;
+   background: var(--section-bg-color);
+}
+
+.card__container {
+   display: flex;
+   justify-content: center;
+}
+
+.card__list {
+   display: flex;
+}
+
+.card__item {
+   max-width: 278px;
+   height: 330px;
+   padding: 20px 22px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   background: #f2f2f2;
+   box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card__item + .card__item {
+   margin-left: 36px;
+}
+
+.card__preview {
+   height: 102px;
+}
+
+.card__title {
+   width: 100%;
+   display: block;
+   text-align: center;
+   margin: 10px 0 18px 0;
+   font-size: 24px;
+   text-transform: uppercase;
+   color: var(--accent-color);
+}
+
+.card__content {
+   font-size: 14px;
+   line-height: 15.1px;
+   text-align: center;
+}
+
+.card__btn-more {
+   position: absolute;
+   bottom: -23px;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+/* footer */
+.footer {
+   background: var(--main-color);
+}
+
+.footer__container {
+   height: 82px;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
