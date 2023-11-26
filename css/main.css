@@ -91,11 +91,14 @@
 /* section offer */
 .offer {
    margin-top: 20px;
-   margin-bottom: 72px;
+   margin-bottom: 43px;
+}
+
+.offer__container {
+   position: relative;
 }
 
 .slide {
-   position: relative;
    padding: 50px 88px 32px;
    display: flex;
    background: var(--accent-color);
@@ -131,20 +134,67 @@
    position: absolute;
    width: 50px;
    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background: var(--main-color);
    border: 0;
    top: 50%;
-	cursor: pointer;
+   cursor: pointer;
+}
+
+.slide__toggle-arrow {
+   display: block;
+   border-left: 3px solid #fff;
+   border-bottom: 3px solid #fff;
+   width: 26px;
+   height: 26px;
 }
 
 .slide__toggle_prev {
    left: 0;
-   transform: translate(-50%, -25px);
+   transform: translate(-50%, -35px);
+}
+
+.slide__toggle_prev > .slide__toggle-arrow {
+   margin-left: 12px;
+   transform: rotate(45deg);
 }
 
 .slide__toggle_next {
    right: 0;
    transform: translate(25px, -50%);
+}
+
+.slide__toggle_next > .slide__toggle-arrow {
+   margin-right: 12px;
+   transform: rotate(-135deg);
+}
+
+.controls {
+   display: flex;
+   padding: 12px 0;
+   background: var(--section-bg-color);
+}
+
+.controls__wrap {
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+}
+
+.controls__el {
+   width: 62px;
+   height: 5px;
+   background: #b4b5af;
+}
+
+.controls__el.active {
+   background: var(--main-color);
+}
+
+.controls__el + .controls__el {
+   margin-left: 14px;
 }
 
 /* section cards */
@@ -178,8 +228,8 @@
 }
 
 .card__preview {
-	margin: 0 auto;
-	width: fit-content;
+   margin: 0 auto;
+   width: fit-content;
    height: 102px;
 }
 
